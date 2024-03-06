@@ -30,7 +30,7 @@ html {
 }
 
 body {
-    background-image: url(/src/img/background.jpg);
+    background-image: url(./src/img/background.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
