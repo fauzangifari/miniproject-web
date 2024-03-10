@@ -532,6 +532,75 @@ header {
     border-radius: 6px;
 }
 
+.contact {
+    background-color: var(--dark-grey);
+    width: 1400px;
+    padding: 2rem;
+    border: 1px solid var(--moody-grey);
+    border-radius: 15px;
+    margin-bottom: 5rem;
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+}
+
+.contact h1 {
+    margin-bottom: 2.2rem;
+    font-size: var(--text-big);
+    font-weight: var(--text-medium);
+    text-align: center;
+}
+
+.contact p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contact form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+}
+
+.contact form input {
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--grey);
+    background-color: transparent;
+    color: var(--grey);
+}
+
+.contact form textarea {
+    width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid var(--grey);
+    background-color: transparent;
+    color: var(--grey);
+}
+
+.contact form button {
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    background: transparent;
+    color: var(--white);
+    font-weight: var(--text-medium);
+    border: 1px solid var(--white);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact form button:hover {
+    background: var(--white);
+    color: var(--dark-grey);
+}
+
 .footer {
     text-align: center;
     padding: 1rem;
@@ -579,8 +648,61 @@ header {
 
     .education {
         width: 100%;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .timeline-container {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .timeline::after {
+        margin-left: -3px;
+        bottom: 50%;
+        top: 50%;
+    }
+
+    .left {
+        left: 0;
+    }
+    
+    .right {
+        left: 0%;
+    }
+
+    .left::before {
+        display: none;
+    }
+    
+    .right::before {
+        display: none;
+    }
+
+    .timeline-container::after {
+        display: none;
+    }
+    
+    .contact {
+        width: 100%;
         padding: 1rem;
         margin: 1rem;
+    }
+
+    .contact form {
+        width: 300px;
+    }
+
+    .contact p {
+        text-align: center;
+    }
+
+    .contact form input {
+        width: 300px;
+    }
+
+    .contact form textarea {
+        width: 300px;
     }
 
     .toggle-btn {
@@ -629,7 +751,7 @@ header {
 
     .footer {
         width: 100%;
+        margin-top: 6rem;
     }
-
     
 }

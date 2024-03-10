@@ -35,12 +35,15 @@
           <li>
             <a href="#education"> Education </a>
           </li>
+          <li>
+            <a href="#contact"> Contact </a>
         </ul>
       </nav>
     </header>
 
-    <!-- Profile Section -->
+    <!-- Main Section -->
     <div class="container">
+      <!-- Profile Section -->
       <div class="profile-card">
         <div class="profile-img">
           <img src="./src/img/profile.jpg" alt="paujangagah" />
@@ -51,9 +54,17 @@
             <h2>Muhammad Fauzan Gifari</h2>
             <h4>College Student</h4>
             <div class="profile-social">
-              <a href="https://www.linkedin.com/in/muhammad-fauzan-gifari/" target="_blank"><i class="fab fa-linkedin"></i></a>
-              <a href="https://www.instagram.com/fauzangfri" target="_blank"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.github.com/fauzangifari" target="_blank"><i class="fab fa-github"></i></a>
+              <a
+                href="https://www.linkedin.com/in/muhammad-fauzan-gifari/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/fauzangfri" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.github.com/fauzangifari" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
             </div>
           </div>
 
@@ -173,7 +184,7 @@
               <h2 class="skill-card-title">Videographer</h2>
               <span class="skill-card-level">Intermediate</span>
               <ul class="skill-card-knowledge">
-                <li>Event School</li>
+                <li>School Event</li>
                 <li>Music Video</li>
                 <li>Short Film</li>
               </ul>
@@ -208,7 +219,36 @@
               <h3>Junior High School</h3>
               <p>SMPN 1 Samarinda</p>
             </div>
+          </div>
         </div>
+      </div>
+
+      <div class="contact" id="contact">
+        <h1>Contact Me</h1>
+        <form action="">
+          <p>
+            If you have any questions or want to work with me, please feel free to
+            contact me. I am open to any opportunities and I am happy to help you.
+          </p>
+          <div class="input-group">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+          </div>
+          <div class="input-group">
+            <input type="text" placeholder="Subject" />
+          </div>
+          <div class="input-group">
+            <textarea
+              name=""
+              id=""
+              rows="7"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <div class="input-group">
+            <button type="submit">Send</button>
+          </div>
+        </form>
       </div>
     </div>
 
@@ -229,7 +269,6 @@
       window.addEventListener("scroll", () => {
         navbar.classList.remove("active");
       });
-
     </script>
   </body>
 </html>
