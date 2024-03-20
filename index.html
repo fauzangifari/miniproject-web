@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muhammad Fauzan Gifari</title>
     <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/output.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -15,6 +16,10 @@
     />
   </head>
   <body>
+    <div class="preloader" id="preloader">
+      <div class="loader"></div>
+    </div>
+
     <!-- Navbar Section -->
     <header>
       <div class="logo">FG</div>
@@ -37,6 +42,7 @@
           </li>
           <li>
             <a href="#contact"> Contact </a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -105,7 +111,7 @@
           </div>
 
           <div class="contact-btn">
-            <a href="#">Contact me</a>
+            <a href="#contact">Contact me</a>
           </div>
         </div>
       </div>
@@ -223,27 +229,30 @@
         </div>
       </div>
 
+      <!-- Project Section -->
+      <div class="project" id="project">
+        <h1>Project</h1>
+        <div class="project-container"></div>
+      </div>
+
+      <!-- Contact Section -->
       <div class="contact" id="contact">
         <h1>Contact Me</h1>
-        <form action="">
+        <form id="contactForm">
           <p>
-            If you have any questions or want to work with me, please feel free to
-            contact me. I am open to any opportunities and I am happy to help you.
+            If you have any questions or want to work with me, please feel free
+            to contact me. I am open to any opportunities and I am happy to help
+            you.
           </p>
           <div class="input-group">
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
+            <input type="text" id="name" placeholder="Name" required/>
+            <input type="email" id="email" placeholder="Email" required/>
           </div>
           <div class="input-group">
-            <input type="text" placeholder="Subject" />
+            <input type="text" id="subject" placeholder="Subject" required/>
           </div>
           <div class="input-group">
-            <textarea
-              name=""
-              id=""
-              rows="7"
-              placeholder="Message"
-            ></textarea>
+            <textarea id="message" rows="7" placeholder="Message" required></textarea>
           </div>
           <div class="input-group">
             <button type="submit">Send</button>
@@ -253,22 +262,13 @@
     </div>
 
     <!-- Footer Section -->
-
     <footer class="footer">
       <p>&copy; 2024 Muhammad Fauzan Gifari</p>
     </footer>
 
-    <script>
-      const toggleBtn = document.querySelector(".toggle-btn");
-      const navbar = document.querySelector(".navbar");
 
-      toggleBtn.addEventListener("click", () => {
-        navbar.classList.toggle("active");
-      });
-
-      window.addEventListener("scroll", () => {
-        navbar.classList.remove("active");
-      });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="src/js/script.js"></script>
   </body>
 </html>
