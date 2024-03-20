@@ -9,6 +9,10 @@ window.addEventListener("scroll", () => {
   navbar.classList.remove("active");
 });
 
+window.addEventListener('load', function() {
+  window.scrollTo(0, 0);
+});
+
 let loader = document.getElementById("preloader");
 window.addEventListener("load", function () {
   this.setTimeout(function () {
