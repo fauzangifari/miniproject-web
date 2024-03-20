@@ -598,23 +598,62 @@ body {
 }
 
 .loader {
+  position: relative;
   height: 100px;
   width: 100px;
 }
 
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
+.load-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 30px;
 }
 
-.loader {
-  animation: spin 1s linear infinite;
-  border-radius: 50%;
-  border-width: 10px;
-  border-style: solid;
-  border-color: var(--moody-grey);
-  border-top-color: var(--white);
+.load-text span {
+  animation: loading 1s infinite alternate;
+}
+
+.load-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.load-text span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.load-text span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.load-text span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.load-text span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.load-text span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+.load-text span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 header {

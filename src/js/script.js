@@ -17,8 +17,7 @@ let loader = document.getElementById("preloader");
 window.addEventListener("load", function () {
   this.setTimeout(function () {
     loader.style.display = "none";
-    document.body.style.overflow = "auto";
-  }, 3000);
+  }, 5000);
 });
 
 let projects = [
@@ -106,30 +105,30 @@ form.addEventListener("submit", function (event) {
 });
 
 gsap.to(".preloader", {
-  duration: 0.5,
+  duration: 1.5,
   autoAlpha: 0,
-  delay: 1,
+  delay: 2.5,
   onComplete: function () {
     document.getElementById("preloader").style.display = "none";
   },
 });
 
 gsap.from("header", {
-  duration: 1,
+  duration: 4.5,
   y: -50,
   opacity: 0,
   ease: "power4.inOut",
 });
 
 gsap.from(".profile-card", {
-  duration: 2,
+  duration: 4.5,
   x: -50,
   opacity: 0,
   ease: "power4.inOut",
 });
 
 gsap.from(".about", {
-  duration: 2,
+  duration: 4.5,
   x: 50,
   opacity: 0,
   ease: "power4.inOut",
