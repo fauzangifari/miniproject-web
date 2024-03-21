@@ -443,3 +443,23 @@ header {
         @apply w-full mt-24;
     }
 }
+
+.cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+    transition: transform .2s ease;
+    transform-origin: center center;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.grow {
+    transform: scale(1.5);
+    background-color: white;
+    mix-blend-mode: difference;
+}
