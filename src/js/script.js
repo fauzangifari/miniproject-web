@@ -1,3 +1,5 @@
+
+
 const toggleBtn = document.querySelector(".toggle-btn");
 const navbar = document.querySelector(".navbar");
 
@@ -18,6 +20,19 @@ window.addEventListener("load", function () {
   this.setTimeout(function () {
     loader.style.display = "none";
   }, 5000);
+});
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+const hidden = document.querySelectorAll(".about, .education, .project, .contact");
+hidden.forEach((element) => { 
+  observer.observe(element);
 });
 
 let projects = [
@@ -114,21 +129,21 @@ gsap.to(".preloader", {
 });
 
 gsap.from("header", {
-  duration: 4.5,
+  duration: 4,
   y: -50,
   opacity: 0,
   ease: "power4.inOut",
 });
 
 gsap.from(".profile-card", {
-  duration: 4.5,
+  duration: 4,
   x: -50,
   opacity: 0,
   ease: "power4.inOut",
 });
 
 gsap.from(".about", {
-  duration: 4.5,
+  duration: 4,
   x: 50,
   opacity: 0,
   ease: "power4.inOut",

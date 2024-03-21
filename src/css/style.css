@@ -338,6 +338,16 @@ header {
 .contact form button:hover {
     background: var(--white);
 }
+
+.education,
+.project,
+.contact {
+  @apply opacity-0 blur-[5px] translate-y-[30px] transition-all duration-[1s];
+}
+.show {
+  @apply opacity-100 blur-none translate-y-0;
+}
+
 .footer {
     background: var(--dark-grey);
 }
